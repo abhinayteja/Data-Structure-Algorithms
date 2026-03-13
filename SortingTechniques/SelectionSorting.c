@@ -4,7 +4,7 @@ int main(){
     int n;
     printf("Eneter the No Elements : ");
     scanf("%d",&n);
-    int arr[n];
+    int arr[n] ;
     for (int i = 0; i < n; i++)
     {
         printf("Eneter the Element  arr[%d] : ",i);
@@ -13,15 +13,14 @@ int main(){
 
     // SELECTION SORT
     int min,temp;
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < 5; i++){
         min = i;
-        for (int j = i+1; j < n; j++) // Why do we keep the j = i + 1 ---> "We do compare the all other elements with this index element"
+        for (int j = i+1; j < 5; j++) // Why do we keep the j = i + 1 ---> "We do compare the all other elements with this index element"
         {
             if (arr[j] < arr[min])
             {
                 min = j; // assing the j to the min 
             }
-
         }
         // Now swap the both the elements 
         temp = arr[i];
@@ -30,7 +29,7 @@ int main(){
     }
     
     printf("[");
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < 5; i++)
     {
         printf(" %d ",arr[i]);
     }
